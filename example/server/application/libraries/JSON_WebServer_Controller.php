@@ -5,8 +5,8 @@
  * <p>Clase base para los controladores que deseen realizar de servidores
  * de la clase JSON_WebClient</p>
  * 
- * <p>Basado en 
- * @see http://www.programacionweb.net/articulos/articulo/sencillo-servicio-web-json-con-php/</p>
+ * <p>Basado en el <a href="http://www.programacionweb.net/articulos/articulo/sencillo-servicio-web-json-con-php">
+ * siguiente artículo Web Services JSON con PHP</a></p>
  * 
  * <p>Los métodos ser invocarán pasando la información de la llamada en formato
  * JSON. La información trasmitida en el objeto JSON tendrá la siguiente 
@@ -31,10 +31,10 @@
  *  <li>debug: Si está activado el modo depuración en el servidor
  *      se devolverá información sobre los parámetros recibidos</li>
  * </ul>
-*
+ *
  * @package        	CodeIgniter
  * @subpackage    	Libraries
- * @category    	Libraries
+ * @category    	Servicios_Web
  * @author        	Santiago D.
  * @license             MIT
  * @link		

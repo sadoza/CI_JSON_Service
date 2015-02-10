@@ -1,12 +1,23 @@
 <?php
 /**
- * JSON_WebClient es una clase muy sencilla que nos permite realizar llamadas
- * a metodos remotos utilizando JSON como lenguaje de intercambio. 
+ * <p>JSON_WebClient es una clase muy sencilla que nos permite realizar llamadas
+ * a metodos remotos utilizando JSON como lenguaje de intercambio. Trabaja
+ * junto a  JSON_WebServer_Controller</p>
  * 
- * Utilizando JSON_WebServer_Controller crearemos un controlador que será el
- * servicio que contenga los métodos que deseamos invocar
+ * <p>Utilizando JSON_WebServer_Controller crearemos un controlador que será el
+ * servicio que contenga los métodos que deseamos invocar</p>
  * 
- * Este clase es muy sencilla y tan solo pretende ser utilizada
+ * <p>Este clase es muy sencilla y tan solo pretende ser utilizada como herramienta
+ * didactica para explicar el uso de servicios web. Si se desea realizar servicios
+ * Web es aconsejable seguir estándares ya implementados como RESTful o SOAP</p>
+ * 
+ * @package        	CodeIgniter
+ * @subpackage    	Libraries
+ * @category    	Servicios_Web
+ * @author        	Santiago D.
+ * @license             MIT
+ * @link		
+ * @version             0.0.1* 
  */
 class JSON_WebClient
 {
@@ -158,7 +169,13 @@ class JSON_WebClient
         }
         
 	/**
-	 * Activa o desactiva el modo de depuración
+	 * <p>Activa o desactiva el modo de depuración</p>
+         * <p>En el modo depuración cada vez que se realice una llamada se 
+         * mostrará una línea de texto que nos permitirá obtener información
+         * sobre la llamada realizada.<br/>
+         * Si además está activada la depuración en el servidor en el retorno
+         * de la función se nos proporcionará información adicional sobre los
+         * parámetros recibidos en el servidor</p>
 	 * @param boolean $state
 	 */
 	public function Debug($state=TRUE)
